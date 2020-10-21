@@ -59,10 +59,13 @@ nav ul li a {
   font-size: 1.5em;
   font-weight: bold;
   padding: 1em;
+  transition: all 0.3s;
 }
 
-nav ul li a:hover {
-  color: #72a84a;
+nav ul li a:hover,
+nav ul li a:active {
+  color: #e4ff1a;
+  text-decoration: underline;
 }
 
 .exit a {
@@ -121,7 +124,7 @@ h1 span {
 
 ul.featured-cabins {
   width: 60%;
-  margin: 0 auto 0 2em;
+  margin: 0 auto;
 }
 
 ul.featured-cabins li {
@@ -266,6 +269,11 @@ p.test-auth {
     font-weight: normal;
     padding: 0 1em;
   }
+
+  nav ul li a:hover {
+    color: #72a84a;
+    text-decoration: none;
+  }
   
   ul.nav li:last-child a {
     padding-right: 0;
@@ -284,6 +292,7 @@ p.test-auth {
     display: grid;
     grid-gap: 2.5em;
     grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto 0 2em;
     width: 90%;
   }
 }
@@ -292,7 +301,7 @@ p.test-auth {
   ul.features {
     display: grid;
     grid-gap: 3em;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3, auto);
     width: 90%;
   }
 }
